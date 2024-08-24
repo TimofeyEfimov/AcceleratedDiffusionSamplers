@@ -9,26 +9,23 @@ BASE_DIFFUSION_FLAGS="--diffusion_steps 4000 --noise_schedule cosine"
 
 # ENABLE_ACCEL_FLAG=False 
 
-# Define an array of timestep respacing values
-timesteps=("5" "10" "12" "15" "20" "25" "35" "50" "75" "100")
+# For benchmarks 
+#imesteps=("5" "10" "12" "15" "20" "25" "35" "50" "75" "100")
 
-# timesteps=("75")
+# For testing 
+timesteps=("75")
 
-# Iterate over the timestep values
 for ENABLE_ACCEL_FLAG in True False; do
 
     if [ "$ENABLE_ACCEL_FLAG" = True ]; then
         ACCEL_FLAG="--accel_flag"
-        ACCEL_DIR="Accel"
+        ACCEL_DIR="Accel"s
     else
         ACCEL_FLAG=""
         ACCEL_DIR="Normal"
     fi
 
     for step in "${timesteps[@]}"; do
-        # Update save directory and output file based on the timestep
-        # SAVE_DIR="testAugust2/AccelDDPM/${step}steps"
-        # OUTPUT_FILE="testAugust2/AccelDDPM/${step}steps/outputs.txt"
 
         SAVE_DIR="finalAugustNew/${ACCEL_DIR}DDPM/${step}steps"
         OUTPUT_FILE="finalAugustNew/${ACCEL_DIR}DDPM/${step}steps/outputs.txt"
@@ -38,8 +35,7 @@ for ENABLE_ACCEL_FLAG in True False; do
         
         # Ensure the output file directory exists (it might be different from $SAVE_DIR)
         mkdir -p $(dirname $OUTPUT_FILE)
-
-        # Update diffusion flags with the current timestep
+        
         DIFFUSION_FLAGS="$BASE_DIFFUSION_FLAGS --timestep_respacing $step"
 
         # Execute the Python script with the provided arguments and redirect output only to the file

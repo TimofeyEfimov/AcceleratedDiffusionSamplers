@@ -82,8 +82,8 @@ def main():
 def create_argparser():
     defaults = dict(
         clip_denoised=True,
-        num_samples=50000,
-        batch_size=500,
+        num_samples=10,
+        batch_size=10,
         use_ddim=False,
         model_path="",
         save_dir="sample_images",  # Default save directory
