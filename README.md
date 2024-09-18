@@ -4,11 +4,18 @@ This is github repository for the paper ["Accelerating convergence of score-base
 
 This code is based on the codebases of: [Improved Denoising Diffusion Probabilistic Models](https://arxiv.org/abs/2102.09672), [DPM-Solver](https://github.com/LuChengTHU/dpm-solver), [DDIM codebase](https://github.com/ermongroup/ddim), and [Guided Diffusion](https://arxiv.org/abs/2105.05233)
 
-Visualization of the accelerated sampling ( top rows are vanilla ODE sampler results, bottom row are accelerated ODE sampler results):
-<img src="images/LowNFE_Bedroom_Comparison.png" alt="LowNFE Bedroom Comparison" width="300"/>
-<img src="images/LowNFE_CelebaHQ_Comparison.png" alt="LowNFE Celeba Comparison" width="300"/>
-<img src="images/LowNFE_Churches_Comparison.png" alt="LowNFE Churches Comparison" width="300"/>
-<img src="images/LowNFE_Churches_Progressive.png" alt="Low NFE Churches Progressive" width="900"/>
+<p>Visualization of the accelerated sampling (top rows are vanilla ODE sampler results, bottom row are accelerated ODE sampler results):</p>
+<table>
+  <tr>
+    <td><img src="images/LowNFE_Bedroom_Comparison.png" alt="LowNFE Bedroom Comparison" width="300"/></td>
+    <td><img src="images/LowNFE_CelebaHQ_Comparison.png" alt="LowNFE Celeba Comparison" width="300"/></td>
+    <td><img src="images/LowNFE_Churches_Comparison.png" alt="LowNFE Churches Comparison" width="300"/></td>
+  </tr>
+  <tr>
+    <td colspan="3" align="center"><img src="images/LowNFE_Churches_Progressive.png" alt="Low NFE Churches Progressive" width="950"/></td>
+  </tr>
+</table>
+
 
 
 
