@@ -1,0 +1,8 @@
+# Ignore all .png files
+*.png
+
+# Ignore all .jpg files
+*.jpg
+
+# Ignore all .pt files (commonly used for PyTorch model files)
+*.pt
