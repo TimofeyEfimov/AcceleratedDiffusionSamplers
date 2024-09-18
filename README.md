@@ -40,12 +40,12 @@ $$
 $$
 
 Where the two steps of the sampling are defined as follows: 
-$
+$$
 \begin{align}
-    \Phi_t(x,z) &= x + \sqrt{\frac{1 - \alpha_t}{2}} z, \tag{2} \\
-    \Psi_{t}(y,z) &= \frac{1}{\sqrt{\alpha_{t}}}\bigg(y + (1-\alpha_{t})s_t(y)\bigg)+\sqrt{\frac{1 - \alpha_t}{2}} z. \tag{3}
+    \Phi_t(x,z) &= x + \sqrt{\frac{1 - \alpha_t}{2}} z,  \\
+    \Psi_{t}(y,z) &= \frac{1}{\sqrt{\alpha_{t}}}\bigg(y + (1-\alpha_{t})s_t(y)\bigg)+\sqrt{\frac{1 - \alpha_t}{2}} z. 
 \end{align}
-$
+$$
 
 # Accelerated ODE sampler 
 
