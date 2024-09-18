@@ -24,7 +24,6 @@ The vanilla SDE samplers has convergence rate of $O(1/\sqrt{T})$: and read as th
 $$
 \begin{equation}
     Y_{t-1}=\frac{1}{\sqrt{\alpha_{t}}}\Big(Y_{t}+(1-\alpha_{t})s_{t}(Y_{t})+\sqrt{1-\alpha_{t}}Z_{t}\Big),  \quad t=T,\dots,1
-    \tag{1}
 \end{equation}
 $$
 
@@ -61,19 +60,16 @@ $$
 The formula for Vanilla ODE sampler with the convergence rate of convergence rate of $O(1/T)$
 
 $$
-\begin{align}
-    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha_{t}}}\right)\epsilon_{t}(X_{t}) \tag{4}
-\end{align}
+\begin{align} & X(\overline{\alpha}{t-1}) \approx \frac{1}{\sqrt{\alpha{t}}}X(\overline{\alpha}{t}) + \left(\sqrt{1-\overline{\alpha}{t-1}}-\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\alpha{t}}}\right)\epsilon_{t}(X_{t}) \end{align}
 $$
 
 
 The formula for Accelerated ODE sampler with improved theoretical convergence rate of $O(1/T^2)$
 
 $$
-\begin{align}
-    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) + \left(\frac{\sqrt{\overline{\alpha}_{t-1}}}{\overline{\alpha}_{t} - \overline{\alpha}_{t+1}}\right)\left(\overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t-1}}}{\sqrt{\overline{\alpha}_{t-1}}} + \arcsin\sqrt{\overline{\alpha}_{t-1}} - \overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\overline{\alpha}_{t}}} - \arcsin\sqrt{\overline{\alpha}_{t}}\right)(\epsilon_{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \tag{5}
-\end{align}
+\begin{align} & X(\overline{\alpha}{t-1}) \approx \frac{1}{\sqrt{\alpha{t}}}X(\overline{\alpha}{t}) + \left(\sqrt{1-\overline{\alpha}{t-1}}-\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\alpha}{t}}\right)\epsilon_{t}(X_{t}) \ & + \left(\frac{\sqrt{\overline{\alpha}{t-1}}}{\overline{\alpha}{t} - \overline{\alpha}{t+1}}\right)\left(\overline{\alpha}{t}\frac{\sqrt{1-\overline{\alpha}{t-1}}}{\sqrt{\overline{\alpha}{t-1}}} + \arcsin\sqrt{\overline{\alpha}{t-1}} \right. \ & \left. - \overline{\alpha}{t}\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\overline{\alpha}{t}}} - \arcsin\sqrt{\overline{\alpha}{t}}\right)(\epsilon{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \end{align}
 $$
+
 
 
 # Usage
