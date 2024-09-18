@@ -55,9 +55,6 @@ $$
 \end{align}
 $$
 
-Where the two steps of the sampling are defined as follows: <br>
-$\Phi_t(x,z) = x + \sqrt{\frac{1 - \alpha_t}{2}} z$ <br> and $\Psi_{t}(y,z) = \frac{1}{\sqrt{\alpha_{t}}}\bigg(y + (1-\alpha_{t})s_t(y)\bigg) + \sqrt{\frac{1 - \alpha_t}{2}} z.$
-
 
 # Accelerated ODE sampler 
 
@@ -65,9 +62,10 @@ The formula for Vanilla ODE sampler with the convergence rate of convergence rat
 
 $$
 \begin{align}
-    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) \tag{4}
+    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha_{t}}}\right)\epsilon_{t}(X_{t}) \tag{4}
 \end{align}
 $$
+
 
 The formula for Accelerated ODE sampler with improved theoretical convergence rate of $O(1/T^2)$
 
