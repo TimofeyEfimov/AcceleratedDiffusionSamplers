@@ -67,9 +67,8 @@ $$
 The formula for Accelerated ODE sampler with improved theoretical convergence rate of $O(1/T^2)$
 
 $$
-\begin{align} & X(\overline{\alpha}{t-1}) \approx \frac{1}{\sqrt{\alpha{t}}}X(\overline{\alpha}{t}) + \left(\sqrt{1-\overline{\alpha}{t-1}}-\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\alpha}{t}}\right)\epsilon_{t}(X_{t}) \ & + \left(\frac{\sqrt{\overline{\alpha}{t-1}}}{\overline{\alpha}{t} - \overline{\alpha}{t+1}}\right)\left(\overline{\alpha}{t}\frac{\sqrt{1-\overline{\alpha}{t-1}}}{\sqrt{\overline{\alpha}{t-1}}} + \arcsin\sqrt{\overline{\alpha}{t-1}} \right. \ & \left. - \overline{\alpha}{t}\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\overline{\alpha}{t}}} - \arcsin\sqrt{\overline{\alpha}{t}}\right)(\epsilon{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \end{align}
+\begin{align} & X(\overline{\alpha}{t-1}) \approx \frac{1}{\sqrt{\alpha{t}}}X(\overline{\alpha}{t}) + \left(\sqrt{1-\overline{\alpha}{t-1}}-\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\alpha}{t}}\right)\epsilon_{t}(X_{t}) \ + \left(\frac{\sqrt{\overline{\alpha}{t-1}}}{\overline{\alpha}{t} - \overline{\alpha}{t+1}}\right)\left(\overline{\alpha}{t}\frac{\sqrt{1-\overline{\alpha}{t-1}}}{\sqrt{\overline{\alpha}{t-1}}} + \arcsin\sqrt{\overline{\alpha}{t-1}}  - \overline{\alpha}{t}\frac{\sqrt{1-\overline{\alpha}{t}}}{\sqrt{\overline{\alpha}{t}}} - \arcsin\sqrt{\overline{\alpha}{t}}\right)(\epsilon_{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \end{align}
 $$
-
 
 
 # Usage
