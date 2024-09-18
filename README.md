@@ -9,7 +9,7 @@ This code is based on the codebases of: [Improved Denoising Diffusion Probabilis
 |:----:|:-----|
 |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1Y-lUCo5_M6H7HZSUhmXiu4yvWS68Ro4B#scrollTo=duxfFwfNFZwF)  | Run the code with cloud GPUs in Google Colab, Instructions are provided in the notebook |
 
-
+<!-- 
 # Accelerated SDE sampler 
 
 The vanilla SDE samplers has convergence rate of $O(1/\sqrt{T})$: and read as the following:
@@ -63,7 +63,7 @@ $$
 \begin{align}
     & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) + \left(\frac{\sqrt{\overline{\alpha}_{t-1}}}{\overline{\alpha}_{t} - \overline{\alpha}_{t+1}}\right)\left(\overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t-1}}}{\sqrt{\overline{\alpha}_{t-1}}} + \arcsin\sqrt{\overline{\alpha}_{t-1}} - \overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\overline{\alpha}_{t}}} - \arcsin\sqrt{\overline{\alpha}_{t}}\right)(\epsilon_{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \tag{5}
 \end{align}
-$$
+$$ -->
 
 
 # Usage
@@ -103,3 +103,19 @@ chmod +x fidEVal.sh
 
 
 # Usage for Cifar-10 score function:
+
+* Install the environment given as .yml file, using command
+```
+conda env create -f environment.yml'
+conda activate DPM
+```
+
+* Need to run the following
+
+```
+chmod +x newSample.sh 
+```
+
+* Similar to the previous codebase, download the weights for CIFAR [here](https://github.com/LuChengTHU/dpm-solver/tree/main/examples/) according to their instructions. 
+
+* Inside newSample.sh, change the GPU, the sample Method(out of vanilla SDE, accelerated SDE, vanilla ODE, and accelerated ODE). All the output is saved to .txt file at the path you specified. 
