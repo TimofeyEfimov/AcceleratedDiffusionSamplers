@@ -6,3 +6,6 @@
 
 # Ignore all .pt files (commonly used for PyTorch model files)
 *.pt
+
+!images/*.png
+!images/*.jpg
