@@ -1,19 +1,15 @@
 #!/bin/bash
 
 # Set the CUDA devices that should be visible to the script (e.g., "0" for the first GPU or "0,1" for the first two GPUs)
-export CUDA_VISIBLE_DEVICES="5"
+export CUDA_VISIBLE_DEVICES="0"
 
 # Set model flags, diffusion flags (base), and train flags
 MODEL_FLAGS="--image_size 64 --num_channels 128 --num_res_blocks 3 --learn_sigma True"
 BASE_DIFFUSION_FLAGS="--diffusion_steps 4000 --noise_schedule cosine"
 
-# ENABLE_ACCEL_FLAG=False 
+BASE_DIR="result"
 
-# For benchmarks 
-#imesteps=("5" "10" "12" "15" "20" "25" "35" "50" "75" "100")
-
-# For testing 
-timesteps=("75")
+timesteps=("10")
 
 for ENABLE_ACCEL_FLAG in True False; do
 
@@ -27,8 +23,8 @@ for ENABLE_ACCEL_FLAG in True False; do
 
     for step in "${timesteps[@]}"; do
 
-        SAVE_DIR="finalAugustNew/${ACCEL_DIR}DDPM/${step}steps"
-        OUTPUT_FILE="finalAugustNew/${ACCEL_DIR}DDPM/${step}steps/outputs.txt"
+        SAVE_DIR="${BASE_DIR}/${ACCEL_DIR}DDPM/${step}steps"
+        OUTPUT_FILE="${SAVE_DIR}/outputs.txt"
 
         # Ensure the output directory exists
         mkdir -p $SAVE_DIR

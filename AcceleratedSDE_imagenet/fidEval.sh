@@ -5,10 +5,6 @@ export CUDA_VISIBLE_DEVICES="1"
 MODEL_FLAGS="--image_size 64 --num_channels 128 --num_res_blocks 3 --learn_sigma True"
 BASE_DIFFUSION_FLAGS="--diffusion_steps 4000 --noise_schedule cosine"
 
-# For benchmarks 
-#imesteps=("5" "10" "12" "15" "20" "25" "35" "50" "75" "100")
-
-# For testing 
 timesteps=("75")
 
 # Pre computed statistics for Image Net 64 

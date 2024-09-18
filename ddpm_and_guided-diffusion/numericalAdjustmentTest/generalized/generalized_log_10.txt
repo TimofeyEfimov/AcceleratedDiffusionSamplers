@@ -1,0 +1,159 @@
+INFO - main.py - 2024-09-18 12:42:07,469 - Using device: cuda
+INFO - main.py - 2024-09-18 12:42:07,470 - Writing log file to numericalAdjustmentTest/generalized/cifar10/logs/
+INFO - main.py - 2024-09-18 12:42:07,470 - Exp instance id = 3521534
+INFO - main.py - 2024-09-18 12:42:07,470 - Exp comment = 
+Loading checkpoint /home/tefimov/ddpm_ckpt/diffusion_models_converted/ema_diffusion_cifar10_model/model-790000.ckpt
+Generating image samples for FID evaluation.:   0%|          | 0/50 [00:00<?, ?it/s]Generating image samples for FID evaluation.:   2%|▏         | 1/50 [00:05<04:43,  5.79s/it]Generating image samples for FID evaluation.:   4%|▍         | 2/50 [00:11<04:31,  5.65s/it]Generating image samples for FID evaluation.:   6%|▌         | 3/50 [00:16<04:22,  5.59s/it]Generating image samples for FID evaluation.:   8%|▊         | 4/50 [00:22<04:15,  5.56s/it]Generating image samples for FID evaluation.:  10%|█         | 5/50 [00:27<04:10,  5.56s/it]Generating image samples for FID evaluation.:  12%|█▏        | 6/50 [00:33<04:03,  5.54s/it]Generating image samples for FID evaluation.:  14%|█▍        | 7/50 [00:38<03:57,  5.53s/it]Generating image samples for FID evaluation.:  16%|█▌        | 8/50 [00:44<03:52,  5.54s/it]Generating image samples for FID evaluation.:  18%|█▊        | 9/50 [00:50<03:46,  5.53s/it]Generating image samples for FID evaluation.:  20%|██        | 10/50 [00:55<03:41,  5.54s/it]Generating image samples for FID evaluation.:  22%|██▏       | 11/50 [01:01<03:35,  5.53s/it]Generating image samples for FID evaluation.:  24%|██▍       | 12/50 [01:06<03:30,  5.53s/it]Generating image samples for FID evaluation.:  26%|██▌       | 13/50 [01:12<03:24,  5.54s/it]Generating image samples for FID evaluation.:  28%|██▊       | 14/50 [01:17<03:19,  5.53s/it]Generating image samples for FID evaluation.:  30%|███       | 15/50 [01:23<03:13,  5.53s/it]Generating image samples for FID evaluation.:  32%|███▏      | 16/50 [01:28<03:07,  5.52s/it]Generating image samples for FID evaluation.:  34%|███▍      | 17/50 [01:34<03:02,  5.52s/it]Generating image samples for FID evaluation.:  36%|███▌      | 18/50 [01:39<02:56,  5.52s/it]Generating image samples for FID evaluation.:  38%|███▊      | 19/50 [01:45<02:51,  5.52s/it]Generating image samples for FID evaluation.:  40%|████      | 20/50 [01:50<02:45,  5.53s/it]Generating image samples for FID evaluation.:  42%|████▏     | 21/50 [01:56<02:40,  5.53s/it]Generating image samples for FID evaluation.:  44%|████▍     | 22/50 [02:01<02:34,  5.53s/it]Generating image samples for FID evaluation.:  46%|████▌     | 23/50 [02:07<02:29,  5.54s/it]Generating image samples for FID evaluation.:  48%|████▊     | 24/50 [02:12<02:23,  5.53s/it]Generating image samples for FID evaluation.:  50%|█████     | 25/50 [02:18<02:18,  5.54s/it]Generating image samples for FID evaluation.:  52%|█████▏    | 26/50 [02:24<02:12,  5.54s/it]Generating image samples for FID evaluation.:  54%|█████▍    | 27/50 [02:29<02:07,  5.53s/it]Generating image samples for FID evaluation.:  56%|█████▌    | 28/50 [02:35<02:01,  5.54s/it]Generating image samples for FID evaluation.:  58%|█████▊    | 29/50 [02:40<01:56,  5.53s/it]Generating image samples for FID evaluation.:  60%|██████    | 30/50 [02:46<01:50,  5.53s/it]Generating image samples for FID evaluation.:  62%|██████▏   | 31/50 [02:51<01:45,  5.54s/it]Generating image samples for FID evaluation.:  64%|██████▍   | 32/50 [02:57<01:39,  5.54s/it]Generating image samples for FID evaluation.:  66%|██████▌   | 33/50 [03:02<01:34,  5.55s/it]Generating image samples for FID evaluation.:  68%|██████▊   | 34/50 [03:08<01:28,  5.54s/it]Generating image samples for FID evaluation.:  70%|███████   | 35/50 [03:13<01:22,  5.53s/it]Generating image samples for FID evaluation.:  72%|███████▏  | 36/50 [03:19<01:17,  5.54s/it]Generating image samples for FID evaluation.:  74%|███████▍  | 37/50 [03:24<01:11,  5.54s/it]Generating image samples for FID evaluation.:  76%|███████▌  | 38/50 [03:30<01:06,  5.53s/it]Generating image samples for FID evaluation.:  78%|███████▊  | 39/50 [03:36<01:00,  5.54s/it]Generating image samples for FID evaluation.:  80%|████████  | 40/50 [03:41<00:55,  5.54s/it]Generating image samples for FID evaluation.:  82%|████████▏ | 41/50 [03:47<00:49,  5.53s/it]Generating image samples for FID evaluation.:  84%|████████▍ | 42/50 [03:52<00:44,  5.52s/it]Generating image samples for FID evaluation.:  86%|████████▌ | 43/50 [03:58<00:38,  5.53s/it]Generating image samples for FID evaluation.:  88%|████████▊ | 44/50 [04:03<00:33,  5.54s/it]Generating image samples for FID evaluation.:  90%|█████████ | 45/50 [04:09<00:27,  5.53s/it]Generating image samples for FID evaluation.:  92%|█████████▏| 46/50 [04:14<00:22,  5.53s/it]Generating image samples for FID evaluation.:  94%|█████████▍| 47/50 [04:20<00:16,  5.54s/it]Generating image samples for FID evaluation.:  96%|█████████▌| 48/50 [04:25<00:11,  5.54s/it]Generating image samples for FID evaluation.:  98%|█████████▊| 49/50 [04:31<00:05,  5.53s/it]Generating image samples for FID evaluation.: 100%|██████████| 50/50 [04:36<00:00,  5.54s/it]Generating image samples for FID evaluation.: 100%|██████████| 50/50 [04:36<00:00,  5.54s/it]
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Normal
+the accelerated version
+Done
+Begin to compute FID...
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [00:32<26:27, 32.40s/it]  4%|▍         | 2/50 [00:33<10:57, 13.70s/it]  6%|▌         | 3/50 [00:33<06:03,  7.72s/it]  8%|▊         | 4/50 [00:34<03:46,  4.92s/it] 10%|█         | 5/50 [00:34<02:31,  3.36s/it] 12%|█▏        | 6/50 [00:35<01:46,  2.43s/it] 14%|█▍        | 7/50 [00:36<01:18,  1.83s/it] 16%|█▌        | 8/50 [00:36<01:00,  1.44s/it] 18%|█▊        | 9/50 [00:37<00:48,  1.18s/it] 20%|██        | 10/50 [00:37<00:40,  1.01s/it] 22%|██▏       | 11/50 [00:38<00:34,  1.13it/s] 24%|██▍       | 12/50 [00:39<00:30,  1.25it/s] 26%|██▌       | 13/50 [00:39<00:27,  1.34it/s] 28%|██▊       | 14/50 [00:40<00:25,  1.42it/s] 30%|███       | 15/50 [00:40<00:23,  1.48it/s] 32%|███▏      | 16/50 [00:41<00:22,  1.52it/s] 34%|███▍      | 17/50 [00:42<00:21,  1.55it/s] 36%|███▌      | 18/50 [00:42<00:20,  1.58it/s] 38%|███▊      | 19/50 [00:43<00:19,  1.59it/s] 40%|████      | 20/50 [00:44<00:18,  1.60it/s] 42%|████▏     | 21/50 [00:44<00:18,  1.61it/s] 44%|████▍     | 22/50 [00:45<00:17,  1.61it/s] 46%|████▌     | 23/50 [00:45<00:16,  1.62it/s] 48%|████▊     | 24/50 [00:46<00:16,  1.62it/s] 50%|█████     | 25/50 [00:47<00:15,  1.62it/s] 52%|█████▏    | 26/50 [00:47<00:14,  1.62it/s] 54%|█████▍    | 27/50 [00:48<00:14,  1.62it/s] 56%|█████▌    | 28/50 [00:48<00:13,  1.62it/s] 58%|█████▊    | 29/50 [00:49<00:12,  1.63it/s] 60%|██████    | 30/50 [00:50<00:12,  1.62it/s] 62%|██████▏   | 31/50 [00:50<00:11,  1.63it/s] 64%|██████▍   | 32/50 [00:51<00:11,  1.63it/s] 66%|██████▌   | 33/50 [00:52<00:10,  1.63it/s] 68%|██████▊   | 34/50 [00:52<00:09,  1.63it/s] 70%|███████   | 35/50 [00:53<00:09,  1.63it/s] 72%|███████▏  | 36/50 [00:53<00:08,  1.63it/s] 74%|███████▍  | 37/50 [00:54<00:07,  1.63it/s] 76%|███████▌  | 38/50 [00:55<00:07,  1.63it/s] 78%|███████▊  | 39/50 [00:55<00:06,  1.63it/s] 80%|████████  | 40/50 [00:56<00:06,  1.63it/s] 82%|████████▏ | 41/50 [00:56<00:05,  1.63it/s] 84%|████████▍ | 42/50 [00:57<00:04,  1.63it/s] 86%|████████▌ | 43/50 [00:58<00:04,  1.63it/s] 88%|████████▊ | 44/50 [00:58<00:03,  1.63it/s] 90%|█████████ | 45/50 [00:59<00:03,  1.63it/s] 92%|█████████▏| 46/50 [01:00<00:02,  1.63it/s] 94%|█████████▍| 47/50 [01:00<00:01,  1.63it/s] 96%|█████████▌| 48/50 [01:01<00:01,  1.63it/s] 98%|█████████▊| 49/50 [01:01<00:00,  1.63it/s]100%|██████████| 50/50 [01:02<00:00,  1.63it/s]100%|██████████| 50/50 [01:03<00:00,  1.26s/it]
+FID: 13.637206382861109

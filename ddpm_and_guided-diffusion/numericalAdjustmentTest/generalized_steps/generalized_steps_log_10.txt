@@ -1,0 +1,17 @@
+INFO - main.py - 2024-09-18 12:41:27,347 - Using device: cuda
+INFO - main.py - 2024-09-18 12:41:27,347 - Writing log file to numericalAdjustmentTest/generalized_steps/cifar10/logs/
+INFO - main.py - 2024-09-18 12:41:27,347 - Exp instance id = 3521030
+INFO - main.py - 2024-09-18 12:41:27,347 - Exp comment = 
+Loading checkpoint /home/tefimov/ddpm_ckpt/diffusion_models_converted/ema_diffusion_cifar10_model/model-790000.ckpt
+Generating image samples for FID evaluation.:   0%|          | 0/50 [00:00<?, ?it/s]Generating image samples for FID evaluation.:   0%|          | 0/50 [00:00<?, ?it/s]
+ERROR:root:Traceback (most recent call last):
+  File "/home/tefimov/AcceleratedSDE/ddpm_and_guided-diffusion/main.py", line 270, in sample
+    runner.sample()
+  File "/home/tefimov/AcceleratedSDE/ddpm_and_guided-diffusion/runners/diffusion.py", line 393, in sample
+    self.sample_fid(model, classifier=classifier)
+  File "/home/tefimov/AcceleratedSDE/ddpm_and_guided-diffusion/runners/diffusion.py", line 445, in sample_fid
+    x, classes = self.sample_image(x, model, classifier=classifier, base_samples=base_samples)
+  File "/home/tefimov/AcceleratedSDE/ddpm_and_guided-diffusion/runners/diffusion.py", line 648, in sample_image
+    raise NotImplementedError
+NotImplementedError
+
