@@ -42,8 +42,8 @@ $$
 Where the two steps of the sampling are defined as follows: 
 $$
 \begin{align}
-    \Phi_t(x,z) &= x + \sqrt{\frac{1 - \alpha_t}{2}} z, \tag{1} \\
-    \Psi_{t}(y,z) &= \frac{1}{\sqrt{\alpha_{t}}}\bigg(y + (1-\alpha_{t})s_t(y)\bigg)+\sqrt{\frac{1 - \alpha_t}{2}} z. \tag{2}
+    \Phi_t(x,z) &= x + \sqrt{\frac{1 - \alpha_t}{2}} z, \tag{2} \\
+    \Psi_{t}(y,z) &= \frac{1}{\sqrt{\alpha_{t}}}\bigg(y + (1-\alpha_{t})s_t(y)\bigg)+\sqrt{\frac{1 - \alpha_t}{2}} z. \tag{3}
 \end{align}
 $$
 
@@ -53,7 +53,7 @@ The formula for Vanilla ODE sampler with the convergence rate of convergence rat
 
 $$
 \begin{align}
-    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) \tag{1}
+    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) \tag{4}
 \end{align}
 $$
 
@@ -61,7 +61,7 @@ The formula for Accelerated ODE sampler with improved theoretical convergence ra
 
 $$
 \begin{align}
-    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) + \left(\frac{\sqrt{\overline{\alpha}_{t-1}}}{\overline{\alpha}_{t} - \overline{\alpha}_{t+1}}\right)\left(\overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t-1}}}{\sqrt{\overline{\alpha}_{t-1}}} + \arcsin\sqrt{\overline{\alpha}_{t-1}} - \overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\overline{\alpha}_{t}}} - \arcsin\sqrt{\overline{\alpha}_{t}}\right)(\epsilon_{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \tag{1}
+    & X(\overline{\alpha}_{t-1}) \approx \frac{1}{\sqrt{\alpha_{t}}}X(\overline{\alpha}_{t}) + \left(\sqrt{1-\overline{\alpha}_{t-1}}-\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\alpha}_{t}}\right)\epsilon_{t}(X_{t}) + \left(\frac{\sqrt{\overline{\alpha}_{t-1}}}{\overline{\alpha}_{t} - \overline{\alpha}_{t+1}}\right)\left(\overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t-1}}}{\sqrt{\overline{\alpha}_{t-1}}} + \arcsin\sqrt{\overline{\alpha}_{t-1}} - \overline{\alpha}_{t}\frac{\sqrt{1-\overline{\alpha}_{t}}}{\sqrt{\overline{\alpha}_{t}}} - \arcsin\sqrt{\overline{\alpha}_{t}}\right)(\epsilon_{t+1}(X_{t+1})-\epsilon_{t}(X_{t})). \tag{5}
 \end{align}
 $$
 
